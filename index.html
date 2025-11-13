@@ -1,4 +1,108 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Color Craft — Handmade Jewelry</title>
+  <meta name="description" content="Color Craft - Handmade jewelry. Contact: 01770086624" />
+  <link rel="icon" type="image/jpeg" href="1000125869.jpg" />
 
-1000125869.jpg
-1000121421.jpg
-1000116172.jpg
+  <style>
+    :root{--accent:#c76f39;--accent-2:#f3e9e0;--bg:#faf8f7;--card:#ffffff;--muted:#666}
+    *{box-sizing:border-box;font-family:Inter, system-ui, Roboto, Arial, sans-serif}
+    body{margin:0;background:var(--bg);color:#111;line-height:1.5}
+    .container{max-width:1000px;margin:0 auto;padding:18px}
+
+    header.site-header{background:linear-gradient(90deg,#ffedd5,#ffe4c7);padding:18px;border-bottom:4px solid rgba(0,0,0,0.04)}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand a{display:inline-block}
+    .brand img{width:72px;height:72px;border-radius:12px;object-fit:cover;box-shadow:0 6px 14px rgba(50,50,60,.08);transition:transform 0.2s ease}
+    .brand img:hover{transform:scale(1.05)}
+    .brand h1{margin:0;font-size:20px}
+    .brand p{margin:2px 0 0;font-size:13px;color:var(--muted)}
+
+    nav{margin-top:12px;display:flex;gap:12px;flex-wrap:wrap}
+    nav a{padding:8px 12px;border-radius:8px;text-decoration:none;background:transparent;color:#333;border:1px solid rgba(0,0,0,0.06)}
+
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px}
+    .card{background:var(--card);padding:16px;border-radius:10px;box-shadow:0 8px 30px rgba(20,20,40,.04)}
+
+    .intro h2{margin-top:0}
+    .cta{display:inline-block;margin-top:8px;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none}
+
+    .products{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;margin-top:14px}
+    .product{border-radius:10px;padding:12px;background:linear-gradient(180deg,#fff,#fff);text-align:center;border:1px solid rgba(0,0,0,0.03)}
+    .product img{width:100%;height:180px;object-fit:cover;border-radius:8px}
+    .price{font-weight:700;margin-top:8px}
+    .muted{color:var(--muted);font-size:13px}
+
+    footer{margin-top:18px;padding:12px;text-align:center;color:var(--muted);font-size:14px}
+
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr}
+      .brand img{width:56px;height:56px}
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <a href="#home"><img id="logo" src="1000125869.jpg" alt="Color Craft Logo" /></a>
+        <div>
+          <h1>Color Craft</h1>
+          <p>Handmade jewelry — Sustainable, Stylish & Affordable</p>
+          <p class="muted">Contact: <a href="tel:01770086624">01770086624</a></p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.facebook.com/share/1AWwx9Nbb7/" target="_blank" rel="noopener">Facebook Page</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="products" class="card">
+      <h2>Popular Products</h2>
+      <p class="muted">সংক্ষিপ্ত: প্রাইস রেঞ্জ ৳50 — ৳1000</p>
+
+      <div class="products">
+        <!-- Product 1 -->
+        <div class="product">
+          <a href="https://www.facebook.com/share/1AWwx9Nbb7/" target="_blank" rel="noopener">
+            <img src="1000121421.jpg" alt="Handmade Pendant Collection" />
+          </a>
+          <div class="muted">Handmade Pendant Collection</div>
+          <div class="price">৳150–৳400</div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+          <a href="https://www.facebook.com/share/1AWwx9Nbb7/" target="_blank" rel="noopener">
+            <img src="1000116172.jpg" alt="Crystal Beaded Bracelets" />
+          </a>
+          <div class="muted">Crystal Beaded Bracelets</div>
+          <div class="price">৳250–৳800</div>
+        </div>
+      </div>
+
+      <p class="muted">আরো প্রোডাক্ট দেখতে আমাদের Facebook পেজে যান।</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Color Craft — Handmade Jewelry • Contact: 01770086624</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
