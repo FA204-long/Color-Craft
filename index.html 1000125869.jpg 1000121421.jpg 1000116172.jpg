@@ -54,9 +54,6 @@
           <p>Handmade jewelry — Sustainable, Stylish & Affordable</p>
           <p class="muted">Contact: <a href="tel:01770086624">01770086624</a></p>
         </div>
-<img src="./1000125869.jpg" alt="Color Craft Logo">
-<img src="./1000121421.jpg" alt="Handmade Pendant Collection">
-<img src="./1000116172.jpg" alt="Crystal Beaded Bracelets">
       </div>
 
       <nav>
@@ -77,8 +74,21 @@
       <div class="products">
         <!-- Product 1 -->
         <div class="product">
-    
+          <a href="https://www.facebook.com/share/1AWwx9Nbb7/" target="_blank" rel="noopener">
+            <img src="1000121421.jpg" alt="Handmade Pendant Collection" />
+          </a>
+          <div class="muted">Handmade Pendant Collection</div>
+          <div class="price">৳150–৳400</div>
+        </div>
 
+        <!-- Product 2 -->
+        <div class="product">
+          <a href="https://www.facebook.com/share/1AWwx9Nbb7/" target="_blank" rel="noopener">
+            <img src="1000116172.jpg" alt="Crystal Beaded Bracelets" />
+          </a>
+          <div class="muted">Crystal Beaded Bracelets</div>
+          <div class="price">৳250–৳800</div>
+        </div>
       </div>
 
       <p class="muted">আরো প্রোডাক্ট দেখতে আমাদের Facebook পেজে যান।</p>
